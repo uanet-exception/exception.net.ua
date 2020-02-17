@@ -1,0 +1,66 @@
+baseURL = "https://exception.net.ua/"
+
+title = "Exception.Net.Ua"
+languageCode = "uk-ua"
+DefaultContentLanguage = "uk-ua"
+hasCJKLanguage = "true"
+
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
+
+theme = "inkblotty"
+paginate = 10
+summaryLength = 150
+
+[Params]
+  share = false
+  readmore = true
+  author = "Unknown"
+  description = "Виключно цікаве поєднання фактів"
+
+[Params.social]
+  fediverse = "https://social.net.ua/exception"
+  github = "uanet-exception"
+
+[permalinks]
+  posts = "/:slug/"
+  page = "/:slug/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  archive = "archives"
+
+[[menu.main]]
+  identifier = "main"
+  name = "Головна"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "post"
+  name = "Публікації"
+  url = "/post/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "projects"
+  name = "Наші проекти"
+  url = "/project/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "about"
+  name = "Хто ми"
+  url = "/about/"
+  weight = 10
+
+[outputs]                          # c.f. https://gohugo.io/templates/output-formats/
+  home = ["HTML", "RSS"]
+  page =  ["HTML"]
+  section =  ["HTML"]
+  taxonomyTerm =  ["HTML", "RSS"]
+  taxonomy =  ["HTML", "RSS"]
+
+[sitemap]
+  filename = "sitemap.xml"  # c.f. https://gohugo.io/templates/sitemap-template/#configure-sitemap-xml

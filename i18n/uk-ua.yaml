@@ -1,0 +1,48 @@
+- id: related_posts_title
+  translation: Корисне
+
+- id: categories_title
+  translation: Рубрики
+
+- id: tags_title
+  translation: Мітки
+
+- id: recent_posts_title
+  translation: Останні публікації
+
+- id: archives_title
+  translation: Архів блогу
+
+- id: previous_page
+  translation: Попередня
+
+- id: next_page
+  translation: Наступна
+
+- id: read_more
+  translation: Детальніше
+
+- id: social_contacts
+  translation: Соц.мережі
+
+- id: last_modified
+  translation: Оновлено
+
+# categories
+- id: Administration
+  translation: Адміністрування
+
+- id: Desktop
+  translation: Робочий стіл
+
+- id: Development
+  translation: Програмування
+
+- id: Hardware
+  translation: Пристрої
+
+- id: Software
+  translation: Програми
+
+- id: Other
+  translation: Інше

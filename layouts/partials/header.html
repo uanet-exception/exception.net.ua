@@ -1,0 +1,31 @@
+<a href="#content">Skip to content</a>
+<div class="wrapper">
+    <header role="banner" class="banner widgets columns-1">
+        <a href="/" rel="home">
+            <h1 class="site">{{ .Site.Title }}</h1>
+            {{ with .Site.Params.Description }}
+            <span class="subtitle">{{.}}</span>
+            {{ end }}
+            <p></p>
+        </a>
+        {{- if .Site.Menus.main }}
+        <nav role="navigation" aria-label="Primary Navigation">
+            <ul class="menu">
+                {{- $currentNode := . }}
+                {{- range sort .Site.Menus.main }}
+                {{- if .Name}}
+                <li class="menu-item {{if eq ($.Permalink|absURL) (.URL|absURL) }} current-menu-item current_page_item {{end}}"><a class="menu__link" href="{{ .URL }}">{{ .Name | upper }}</a></li>
+                {{- end }}
+                {{- end }}
+            </ul>
+            <select onChange="location.href=value;">
+                {{- $currentNode := . }}
+                {{- range sort .Site.Menus.main }}
+                {{- if .Name}}
+                <option value="{{ .URL }}" class="menu-item menu-item-type-custom menu-item-object-custom" {{if eq ($.Permalink|absURL) (.URL|absURL) }} selected="selected" {{end}}>{{ .Name | upper }}</option>
+                {{- end }}
+                {{- end }}
+            </select>
+        </nav>
+        {{- end }}
+    </header>

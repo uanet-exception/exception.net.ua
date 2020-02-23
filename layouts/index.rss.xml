@@ -33,7 +33,9 @@
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       {{ with .Params.tags }}
-      <tags>{{ range . }}#{{ . | urlize}} {{ end }}</tags>
+      {{ range . }}
+      <category>{{ . | urlize}}</category>
+      {{ end }}
       {{ end }}
       <description>{{ .Summary | html }}</description>
     </item>

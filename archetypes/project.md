@@ -9,6 +9,6 @@ tags:
 categories:
   - "Other"
 draft: true
-type: "post"
+type: "project"
 archives: "{{ dateFormat "2006" .Date }}"
 ---

@@ -2,7 +2,7 @@
 
 <main role="main">
     <article role="article" class="post type-post format-standard hentry">
-        {{- if ne .Params.Type "about" }}
+        {{- if in site.Params.mainSections .Page.Type }}
         <header class="post-header">
             <h1>{{ .Title }}</h1>
             {{ with .Params.subtitle }}
@@ -30,7 +30,7 @@
             {{ .Content }}
         </div>
 
-        {{- if ne .Params.Type "about" }}
+        {{- if in site.Params.mainSections .Page.Type }}
         <footer class="post-footer">
             {{ with .Params.categories }}
             <span class="post-categories">
@@ -52,7 +52,7 @@
         {{- end }}
     </article>
 
-    {{ if eq .Page.Type "post" }}
+    {{ if in site.Params.mainSections .Page.Type }}
     <nav class="navigation post-navigation" role="navigation">
         <div class="nav-links">
             <div class="nav-previous">

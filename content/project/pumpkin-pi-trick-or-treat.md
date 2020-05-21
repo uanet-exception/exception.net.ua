@@ -12,7 +12,7 @@ tags:
 categories:
   - "Development"
   - "Hardware"
-type: "post"
+type: "project"
 archives: "2017"
 ---
 

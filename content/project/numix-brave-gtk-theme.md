@@ -10,7 +10,7 @@ tags:
   - "openbox"
 categories:
   - "Desktop"
-type: "post"
+type: "project"
 archives: "2017"
 ---
 

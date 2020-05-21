@@ -13,7 +13,7 @@ tags:
 categories:
   - "Desktop"
   - "Software"
-type: "post"
+type: "project"
 archives: "2013"
 ---
 

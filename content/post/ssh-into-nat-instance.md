@@ -13,6 +13,9 @@ tags:
 categories:
   - "Desktop"
   - "Administration"
+menu:
+  - menu.main:
+    - parent: "post"
 draft: false
 type: "post"
 archives: "2020"
@@ -97,4 +100,4 @@ $ ssh root@your.api.example.com -t ssh user@localhost -p 2222
 user@work:~$
 {{< /highlight >}}
 
-Ось і все, щасливого хакінгу! 
+Ось і все, щасливого хакінгу!

@@ -17,6 +17,7 @@ summaryLength = 150
   readmore = true
   author = "Unknown"
   description = "Виключно цікаве поєднання фактів"
+  mainSections = ["post", "project"]
 
 [Params.social]
   fediverse = "https://social.net.ua/exception"
@@ -44,7 +45,7 @@ summaryLength = 150
   weight = 2
 
 [[menu.main]]
-  identifier = "projects"
+  identifier = "project"
   name = "Наші проекти"
   url = "/project/"
   weight = 3

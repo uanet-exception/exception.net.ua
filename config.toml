@@ -4,6 +4,7 @@ title = "Exception.Net.Ua"
 languageCode = "uk-ua"
 DefaultContentLanguage = "uk-ua"
 hasCJKLanguage = "true"
+enableRobotsTXT = true
 
 enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"

@@ -22,7 +22,7 @@ draft: false
 
 <!--more-->
 
-Сподіваюсь, що з docker ви вже знайомі, тому що першим ділом ми повинні запустити контейнер з Grafana та StatsD. Тож відкриваємо термінал та виконуємо наступну команду:
+Сподіваюсь, що з docker ви вже знайомі, тому що першим ділом ми повинні запустити контейнер з [Grafana та StatsD](https://github.com/uanet-exception/grafana4-statsd#statsd--graphite--grafana-4). Тож відкриваємо термінал та виконуємо наступну команду:
 
 {{< highlight html>}}
 $ docker run --rm -it \

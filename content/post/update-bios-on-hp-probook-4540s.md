@@ -7,7 +7,7 @@ tags:
   - "efi"
   - "hp"
   - "bios"
-  - "hp proobok 4540s"
+  - "hp probook 4540s"
 categories:
   - "Hardware"  
 type: "post"

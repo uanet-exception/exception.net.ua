@@ -7,7 +7,7 @@ tags:
   - "efi"
   - "hp"
   - "bios"
-  - "hp proobok 440 G7"
+  - "hp probook 440 G7"
 categories:
   - "Hardware"  
 type: "post"

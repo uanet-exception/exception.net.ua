@@ -61,7 +61,7 @@ $ sudo dmidecode -s bios-version
 68IRR Ver. F.68
 {{< /highlight >}}
 
-А також не забуваємо видалити вже непотрібні файли у директорії EFI:
+А також не забуваємо видалити вже непотрібні файли з директорії EFI:
 {{< highlight html >}}
 $ sudo rm -r /boot/efi/EFI/HP
 {{< /highlight >}}

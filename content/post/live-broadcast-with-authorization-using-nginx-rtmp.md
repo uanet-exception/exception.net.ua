@@ -93,7 +93,7 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 root@vps-00001:~# service nginx reload
 {{< / highlight >}}
 
-На цьому з налаштуванням nginx покінчено, настав час перевірити чи все працює. Візьмемо для прикладу якийсь файл з відео та за допомогою `ffmpeg` розпочнемо трансляцію на сервер:
+На цьому з налаштуванням nginx завершено, настав час перевірити чи все працює. Візьмемо для прикладу якийсь файл з відео та за допомогою `ffmpeg` розпочнемо трансляцію на сервер:
 
 {{< highlight html >}}
 $ ffmpeg -re -i ~/Videos/AntiTrust.avi \

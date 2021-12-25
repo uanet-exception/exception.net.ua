@@ -8,6 +8,7 @@ tags:
   - "perl5"
   - "bash"
   - "ssh"
+  - "onall"
   - "linux"
 categories:
   - "Software"

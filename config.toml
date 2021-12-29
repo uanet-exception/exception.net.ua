@@ -56,6 +56,12 @@ summaryLength = 150
   name = "Хто ми"
   url = "/about/"
   weight = 10
+  
+[[menu.main]]
+  identifier = "rss"
+  name = "RSS-стрічка"
+  url = "/index.xml"
+  weight = 100
 
 [outputs]                          # c.f. https://gohugo.io/templates/output-formats/
   home = ["HTML", "RSS"]

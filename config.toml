@@ -23,6 +23,7 @@ summaryLength = 150
 [Params.social]
   fediverse = "https://social.net.ua/exception"
   github = "uanet-exception"
+  feed = "https://exception.net.ua/index.xml"
 
 [permalinks]
   posts = "/:slug/"

@@ -24,4 +24,4 @@ archives: "2013"
 ![screenshot 1](/images/2013/gxkb/gxkb_tray_layouts.png#center "gxkb")
 
 
-Деталі на сторінці проекта у [GitHub](https://github.com/zen-tools/gxkb).
+Деталі на сторінці проекту на [GitHub](https://github.com/zen-tools/gxkb).

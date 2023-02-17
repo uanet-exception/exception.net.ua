@@ -48,7 +48,7 @@ summaryLength = 150
 
 [[menu.main]]
   identifier = "project"
-  name = "Наші проекти"
+  name = "Наші проєкти"
   url = "/project/"
   weight = 3
 

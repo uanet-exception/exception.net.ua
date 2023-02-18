@@ -23,6 +23,8 @@ summaryLength = 150
 [Params.utteranc]         # utteranc is a comment system based on GitHub issues. see https://utteranc.es
   repo = "uanet-exception/exception.net.ua"
   issue_term = "pathname"
+  label = "comments :speech_balloon:"
+  theme = "github-light"
 
 [Params.social]
   fediverse = "https://social.net.ua/exception"

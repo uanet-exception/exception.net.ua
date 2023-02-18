@@ -18,7 +18,11 @@ summaryLength = 150
   readmore = true
   author = "Unknown"
   description = "Виключно цікаве поєднання фактів"
-  mainSections = ["post", "project"]
+  mainSections = ["post","project"]
+
+[Params.utteranc]         # utteranc is a comment system based on GitHub issues. see https://utteranc.es
+  repo = "uanet-exception/exception.net.ua"
+  issue_term = "pathname"
 
 [Params.social]
   fediverse = "https://social.net.ua/exception"

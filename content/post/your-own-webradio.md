@@ -12,7 +12,6 @@ tags:
   - "selfhost"
   - "nginx"
   - "docker"
-  - "docker-compose"
 categories:
   - "Other"
 type: "post"
@@ -150,7 +149,7 @@ $
 В результаті, отримаємо ось таку структуру проєкту:
 
 ```bash
-$ tree -a ~/dockerized-apps/radio
+~$ tree -a ~/dockerized-apps/radio
 ~/dockerized-apps/radio
 ├── data
 │   ├── icestats_history.json
@@ -346,7 +345,7 @@ services:
 
   liquidsoap:
     container_name: radio-liquidsoap
-    image: "ghcr.io/savonet/liquidsoap:v2.1.0"
+    image: "ghcr.io/savonet/liquidsoap:v2.1.4"
     restart: always
     command: ["/script.liq"]
     ports:

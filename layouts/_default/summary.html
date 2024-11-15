@@ -26,7 +26,7 @@
 			</div>
 		</header>
 
-		<div class="post-excerpt"><p>
+		<div class="post-excerpt">
 			{{ .Summary }}
 
 			{{- if .Site.Params.readmore }}
@@ -34,7 +34,8 @@
 			<a href="{{ .RelPermalink }}" class="more-link">{{ T "read_more" }} </a>
 			{{- end }}
 			{{- end }}
-		</p></div>
+			<p></p>
+		</div>
 	</div>
 
 	<footer class="post-footer">

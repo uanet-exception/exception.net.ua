@@ -42,7 +42,7 @@ $ sudo apt-get install openssh-server --no-install-recommends
 Далі нам потрібно згенерувати безпарольний ssh-ключ, який буде використовувати сервіс systemd. По задуму сервіс повинен автоматично під'єднатися до your.api.example.com у разі перебоїв у мережі. Тож виконуємо наступні команди для створення ключа з ім'ям nopwd та додамо публічний ключ на your.api.example.com сервер.
 
 {{< highlight html >}}
-$ ssh-keygen -N '' -C work-pc-toonel -f ~/.ssh/nopwd
+$ ssh-keygen -N '' -C work-pc-tunnel -f ~/.ssh/nopwd
 $ cat ~/.ssh/nopwd.pub | ssh root@your.api.example.com "cat >>  ~/.ssh/authorized_keys"
 $ # Перевіряємо, чи ключ працює нормально
 $ ssh root@your.api.example.com -i ~/.ssh/nopwd whoami
@@ -53,7 +53,7 @@ root
 
 {{< highlight html >}}
 [Unit]
-Description=SSH Toonel to your.api.example.com
+Description=SSH Tunnel to your.api.example.com
 After=network.target
 
 [Service]
@@ -80,7 +80,7 @@ $ sudo systemctl daemon-reload
 $ sudo systemctl enable backdoor.service
 $ sudo systemctl start backdoor.service
 $ sudo systemctl status backdoor.service | head -n3
-● backdoor.service - SSH Toonel to social.net.ua
+● backdoor.service - SSH Tunnel to your.api.example.com
      Loaded: loaded (/etc/systemd/system/backdoor.service; enabled; vendor preset: enabled)
      Active: active (running) since Sun 2020-05-17 23:41:13 EEST; 28s ago
 {{< /highlight >}}

@@ -11,4 +11,6 @@ categories:
 draft: true
 type: "project"
 archives: "{{ dateFormat "2006" .Date }}"
+images:
+  - images/default-cover.png
 ---

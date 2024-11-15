@@ -30,7 +30,7 @@ root@vps-00001:~# apt-get install nginx-full libnginx-mod-rtmp
 
 Наступним кроком відкриваємо у своєму улюбленому текстовому редакторі файл `/etc/nginx/nginx.conf` та додаємо туди конфігурацію двох примітивних віртуальних веб серверів для перевірки авторизації, а також додаємо налаштування RTMP серверу:
 
-{{< highlight plaintext "linenos=table,hl_lines=4-22 25-41,linenostart=72" >}}
+{{< highlight nginx "linenos=table,hl_lines=4-22 25-41,linenostart=72" >}}
  	include /etc/nginx/conf.d/*.conf;
  	include /etc/nginx/sites-enabled/*;
 
